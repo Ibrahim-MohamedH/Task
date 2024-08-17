@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 2000px;
+}
+/* Navbar */
+.main .nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav .bars {
+  display: none;
+}
+.main .nav .bars i {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+.main .nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.main .nav ul li {
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.main .nav ul li:hover {
+  background-color: white;
+  color: black;
+}
+.main .nav .logo {
+  & img {
+    width: 150px;
+  }
+}
+/* main content */
+.main {
+  text-align: center;
+  background-image: url(../images/nature.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin: 20px;
+}
+.main button {
+  color: aqua;
+  background-color: crimson;
+  width: 20%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.main button:hover {
+  transform: scale(1.1);
+}
+/* about us */
+.aboutUs {
+  background-image: url(../images/c.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+.aboutUs .layout {
+  padding: 40px 0px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.aboutUs h1 {
+  text-align: center;
+  margin: 15px auto;
+  border: 5px solid white;
+  border-top: 5px solid transparent;
+  border-radius: 15px;
+  width: 25%;
+}
+.aboutUs .main-content {
+  display: flex;
+  margin-top: 50px;
+}
+.aboutUs .main-content .aboutus-image,
+.aboutUs .main-content .aboutus-content {
+  text-align: center;
+}
+.aboutUs .main-content .aboutus-image {
+  width: 35%;
+}
+.aboutUs .main-content .aboutus-image img {
+  width: 100%;
+}
+.aboutUs .main-content .aboutus-content {
+  width: 65%;
+}
+.aboutUs .main-content .aboutus-content div {
+  margin-bottom: 10px;
+}
+.aboutUs .main-content .aboutus-content h2 {
+  font-size: 36px;
+}
+.aboutUs .main-content .aboutus-content p {
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  .aboutUs h1 {
+    width: 35%;
+  }
+}
+@media (max-width: 992px) {
+  .main .nav .bars {
+    display: block;
+  }
+  .main .nav ul {
+    display: none;
+  }
+  .aboutUs .main-content {
+    flex-wrap: wrap;
+  }
+  .aboutUs h1 {
+    width: 45%;
+  }
+  .aboutUs .main-content .aboutus-image,
+  .aboutUs .main-content .aboutus-content {
+    width: 100%;
+  }
+  .aboutUs .main-content .aboutus-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aboutUs .main-content .aboutus-content div {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 767px) {
+  .main .main-img {
+    width: 100%;
+  }
+  .aboutUs h1 {
+    width: 65%;
+  }
+}
+@media (max-width: 576px) {
+  .aboutUs .main-content .aboutus-content div {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .main button {
+    width: 40%;
+  }
+  .aboutUs h1 {
+    width: 90%;
+  }
+}
